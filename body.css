@@ -1,0 +1,324 @@
+/*--------------MAIN---------------*/
+
+/*-------------tentang------------*/
+
+.tentang {
+  width: 100%;
+  padding: 50px 0px;
+  font-family: poppins;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card {
+  height: 350px;
+  width: 320;
+  padding: 20px 35px;
+  background: #07162d;
+  border-radius: 15px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card img {
+  float: left;
+}
+
+.card h5 {
+  color: white;
+  font-size: 23px;
+  margin-top: 70px;
+}
+
+.pra {
+  color: rgb(255, 255, 255);
+  font-style: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.pra p {
+  width: 320px;
+  margin-top: 10px;
+}
+
+/*-----------------ekskul-------------------*/
+
+.ekskul {
+  width: 100%;
+  padding: 100px 0px;
+  background-image: url(assets/img/Group\ 838.png);
+  font-family: poppins;
+  background-size: cover;
+}
+
+.ekskul-text {
+  /* width: 550px; */
+  margin-right: 50px;
+}
+
+.main1 {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ekskul-text h5 {
+  color: #07162d;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.ekskul-text p {
+  color: #07162d;
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  font-weight: 500;
+  width: 469px;
+}
+.logo-ekskul img {
+  /* padding: 10px ; */
+  margin-bottom: 60px;
+  width: 200px;
+}
+
+/*-------------prestasi-------------*/
+
+.prestasi {
+  display: flex;
+  width: 100%;
+  padding: 50px 0px;
+  font-family: poppins;
+  margin: 0 auto;
+}
+.container2 {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  margin: auto;
+  background-color: #ece6e89b;
+  border-radius: 15px;
+  width: 972px;
+  margin-top: 30px;
+  align-items: center;
+  /* margin: auto  auto auto; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content h4 {
+  font-size: 32px;
+  color: #f5f5f5;
+}
+
+.content h5 {
+  color: #07162d;
+  font-size: 20px;
+  padding: 0px 20px;
+}
+
+.content p {
+  color: #07162d;
+  font-size: 18px;
+  width: 550px;
+  padding: 0px 20px;
+}
+
+.content img {
+  padding: 10px 10px 10px 10px;
+}
+
+.text-prestasi {
+  float: right;
+}
+
+/* responsive */
+
+/* Tablet */
+@media all and (max-width: 1000px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .card {
+    /* height: 350px; */
+    /* width: 280px; */
+    /* padding: 20px 35px; */
+    /* align: left; */
+    text-align: left;
+  }
+  .card p {
+    text-align: justify;
+  }
+  .logo-ekskul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-ekskul {
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .ekskul-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  .ekskul-text p {
+    margin: auto;
+  }
+  .tentang {
+    /* padding: 10px; */
+    margin-top: 50px;
+    width: 100%;
+    /* margin-left: -100px ; */
+  }
+  .content {
+    display: flex;
+    width: 750px;
+  }
+  .content p {
+    width: 92%;
+  }
+  .content img {
+    width: 300px;
+  }
+  .ekskul-text h5 {
+    font-size: 32px;
+  }
+}
+
+/* Smartphone */
+@media all and (max-width: 680px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .card {
+    /* height: 350px; */
+    /* width: 280px; */
+    /* padding: 20px 35px; */
+    /* align: left; */
+    text-align: left;
+    height: 331px;
+    width: 335px;
+  }
+  .card p {
+    text-align: justify;
+    font-size: 14px;
+    width: 100%;
+  }
+  .card h5 {
+    font-size: 18px;
+  }
+
+  .logo-ekskul {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+  }
+
+  .main1 {
+    display: flex;
+    /* border: 1px red solid; */
+    flex-direction: column;
+    position: inherit;
+  }
+  .logo-ekskul {
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+  .ekskul {
+    height: 1880px;
+  }
+  .ekskul-text {
+    margin-top: 86px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  .ekskul-text p {
+    margin: auto;
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .ekskul-text h5 {
+    color: #07162d;
+    text-align: center;
+    font-size: 32px;
+    text-align: center;
+  }
+  .tentang {
+    /* padding: 10px; */
+    width: 100%;
+    /* margin-left: -100px ; */
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: white;
+  }
+
+  .content p {
+    width: 92%;
+  }
+  .content img {
+    width: 21rem;
+    margin: auto;
+  }
+  .text-prestasi {
+    background-color: white;
+    display: flex;
+    margin: auto;
+  }
+  .text-prestasi p {
+    display: none;
+    font-size: 12px;
+  }
+
+  .text-prestasi h5 {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: justify;
+    align-items: center;
+  }
+}

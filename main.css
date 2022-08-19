@@ -1,0 +1,388 @@
+/* h2 {
+    vertical-align: center;
+    text-align: center;
+} */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-image: url(assets/img/bg\ lagi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #07162d;
+  color: #fff;
+  max-height: 50px;
+  padding: 2em;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  /* margin: 0 0 0 20%; */
+}
+
+.logo a {
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  /* margin: 0 20% 0 0; */
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 4px;
+}
+
+.menu > li:hover {
+  background-color: #ffffff;
+  color: #07162d;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media screen and (max-width: 843px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #07162d;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #07162d;
+  }
+
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #07162d;
+  }
+}
+
+.containerr1 {
+  width: 100%;
+  /* background-size: cover; */
+}
+
+.main {
+  font-family: "Poppins";
+  color: #ffffff;
+  margin: 30% 21% 28% -3%;
+  display: flex;
+}
+
+.main .title1 {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 0.5em;
+}
+
+.main .title2 {
+  font-size: 2.75em;
+  width: 100%;
+  font-weight: 700;
+  line-height: 0.5em;
+}
+
+.main .title3 {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 0.5em;
+}
+
+.button1 {
+  font-size: 17px;
+  border-radius: 5px;
+  /* margin-top: 10%; */
+  padding: 0.75em 1.5em;
+  color: white;
+  background-color: #07162d;
+  line-height: 5em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1003px) {
+  html,
+  body {
+    background-image: none;
+  }
+  .containerr1 {
+    display: flex;
+    background-image: url(assets/img/bg\ lagi.png);
+    height: 700px;
+  }
+  .main {
+    font-family: "Poppins";
+    color: #ffffff;
+    margin: 20% 10% 20% 10%;
+  }
+
+  .main .title1 {
+    line-height: 0.5em;
+  }
+
+  .main .title2 {
+    line-height: 0.5em;
+  }
+
+  .main .title3 {
+    line-height: 1em;
+  }
+
+  .button1 {
+    line-height: 5em;
+    margin: ;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    font-family: "Poppins";
+    color: #ffffff;
+    margin: 20% 10% 20% 10%;
+  }
+
+  .main .title1 {
+    line-height: 1em;
+  }
+
+  .main .title2 {
+    line-height: 1em;
+    font-size: 2.2em;
+  }
+
+  .main .title3 {
+    line-height: 1em;
+    font-size: 1em;
+  }
+
+  .button1 {
+    line-height: 8em;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .main {
+    font-family: "Poppins";
+    color: #ffffff;
+    margin: 20% 10% 20% 10%;
+  }
+
+  .main .title1 {
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .main .title2 {
+    line-height: 1em;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .main .title3 {
+    line-height: 1em;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .button1 {
+    line-height: 14em;
+    margin: 0 25% 0 25%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    font-family: "Poppins";
+    color: #ffffff;
+    margin: 20% 10% 20% 10%;
+    text-align: center;
+  }
+
+  .main .title1 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1em;
+  }
+
+  .main .title2 {
+    font-size: 2em;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1em;
+  }
+
+  .main .title3 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .button1 {
+    font-size: 17px;
+    border-radius: 5px;
+    /* margin-top: 10%; */
+    padding: 0.75em 1.5em;
+    color: white;
+    background-color: #07162d;
+    line-height: 16em;
+    margin: auto;
+  }
+}
+
+.button1:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #07162d;
+    max-height: 50px;
+    padding: 2em;
+  }
+
+  .logo a {
+    color: #07162d;
+    font-size: large;
+  }
+
+  .logo span {
+    font-weight: bolder;
+    font-size: large bolder;
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #07162d;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 5px;
+  }
+}
