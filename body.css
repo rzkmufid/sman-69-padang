@@ -152,7 +152,7 @@
 /* responsive */
 
 /* Tablet */
-@media all and (max-width: 1000px) {
+@media only screen and (max-width: 1080px) {
   .box {
     display: flex;
     flex-direction: row;
@@ -217,7 +217,7 @@
 }
 
 /* Smartphone */
-@media all and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   .box {
     display: flex;
     flex-direction: row;
