@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 * {
@@ -222,7 +223,6 @@ body {
   html,
   body {
     background-image: none;
-    width: 100%;
   }
   .containerr1 {
     display: flex;
