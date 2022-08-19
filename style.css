@@ -90,7 +90,7 @@ iframe {
 }
 
 .img-bottom {
-  display: none;
+  /* display: none; */
   width: 50%;
   height: 135px;
   float: left;
