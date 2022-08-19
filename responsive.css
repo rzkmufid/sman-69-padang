@@ -15,9 +15,8 @@
   .img-bottom {
     float: left;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
-    text-align: center;
   }
   .img-bottom .social {
     width: 50%;
@@ -29,7 +28,7 @@
   }
 
   .love p {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
@@ -97,6 +96,7 @@
     width: 100%;
     height: 90px;
     padding: 0;
+    margin: 0 auto;
   }
 
   .img-bottom .social {
@@ -112,5 +112,8 @@
   .right {
     width: 230px;
     height: 82px;
+  }
+  .love p {
+    font-size: 12px;
   }
 }
